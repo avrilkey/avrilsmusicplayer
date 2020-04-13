@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Source+Sans+Pro|Tajawal|Titillium+Web&display=swap");
+
+body {
+  background: #000000;
+}
+
+#background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+/*music player container*/
+.container {
+  position: absolute;
+  height: 340pt;
+  width: 250pt;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #000000;
+}
+
+/* player functions*/
+.box {
+  position: absolute;
+  height: 50%;
+  width: 103%;
+  background: -webkit-linear-gradient(45 deg, rbg(40, 40, 40), rgb(133, 133, 133));
+  z-index: 4;
+  bottom: -17%;
+}
+
+/* cover art*/
+#thumbnail {
+  position: absolute;
+  width: 103%;
+  top: -7%;
+  transition: 1s;
+  z-index: 3;
+}
+
+
+/*Track Title*/
+.song-title {
+  position: absolute;
+  z-index: 4;
+  color: #e4ff00;
+  font-family:"Tajawal", sans-serif;
+  font-size: 16px;
+  bottom: 14%;
+  left: 20%; /*positions the song title text to the left*/
+  
+}
+
+/* button styles for play and pause image*/
+#play-pause {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  filter: invert(1);
+  cursor: pointer;
+  bottom: 14.5%;
+  z-index: 4;
+  font-size: 53px;
+  left: 4%;
+}
+
+/* style for next and previous song images */
+#next-song,
+#previous-song {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  filter: invert(1);
+  cursor: pointer;
+  bottom: 18.5%;
+  font-size: 38px;
+  z-index: 4;
+}
+
+/* unique style for next song image*/
+#next-song {
+  right: 5%;
+}
+
+/*unique style for previous song image*/
+#previous-song {
+  right: 5%;
+  bottom: 9.5%;
+}
+
+/* style for current itme of the song */
+.currentTime {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  bottom: 2%;
+  left: 17%;
+  z-index: 4;
+  font-family: "Tajawal", sans-serif;
+  font-size: 11px;
+  color: white;
+  align-items: center;
+}
+
+/* style for the lenght of the  song */
+.durationTime {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  bottom: 2%;
+  right: 11%;
+  z-index: 4;
+  font-family: "Tajawal", sans-serif;
+  font-size: 11px;
+  align-items: center;
+  color: white;
+}
+
+/* style for progress bar */
+#progress-bar {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  z-index: 4;
+  height: 5px;
+  background: #C0C0C0;
+  width: 160pt;
+  bottom: 7%;
+  border-radius: 30px;
+  left: 17%;
+}
+
+/* style for the progress bar's slider */
+#progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -3px;
+  margin-left: 0px;
+  height: 10px;
+  width: 7px;
+  border: 0;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(213, 213, 213),
+    rgb(193, 255, 6)
+  );
+  border-radius: 30px;
+  cursor: pinter;
+}
+
+/* style for the progress bar's runnable track*/
+#progress-bar::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  max-height: 5px;
+  border-radius: 30px;
+}
+
+/* style to remove blue shade of the progress bar when clicked */
+#progress-bar:focus {
+  outline: none;
+}

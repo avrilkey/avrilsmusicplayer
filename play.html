@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Avril's Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img
+      src="https://cdn.glitch.com/8d90fb7c-d365-4065-9b8c-17b1b25ec8fc%2Fgroove.png?v=1585705272817"
+      id="background"
+    />
+    <audio
+      src="https://cdn.glitch.com/8d90fb7c-d365-4065-9b8c-17b1b25ec8fc%2Ftellme.mp3?v=1585705284127"
+      id="song"
+    ></audio>
+
+    <div class="container">
+      <div class="song-title"> Groove Theory <br> Tell Me </div>
+      <div class="box"></div>
+      <img
+        src="https://cdn.glitch.com/8d90fb7c-d365-4065-9b8c-17b1b25ec8fc%2Fgroove.png?v=1585705272817"
+        id="thumbnail"
+      />
+
+      <img
+        src="https://cdn.glitch.com/8d90fb7c-d365-4065-9b8c-17b1b25ec8fc%2Fplay.png?v=1585684219629"
+        onclick="playPause()"
+        id="play-pause"
+      />
+      <img
+        src="https://cdn.glitch.com/8d90fb7c-d365-4065-9b8c-17b1b25ec8fc%2Fnext.png?v=1585684230941"
+        onclick="nextSong()"
+        id="next-song"
+      />
+      <img
+        src="https://cdn.glitch.com/8d90fb7c-d365-4065-9b8c-17b1b25ec8fc%2Fprevious.png?v=1585684214094"
+        onclick="previousSong()"
+        id="previous-song"
+      />
+
+      
+      
+
+      <input
+        type="range"
+        id="progress-bar"
+        min="0"
+        max=" "
+        value="0"
+        onchange="changeProgressBar()"
+      />
+
+      <div class="currentTime"></div>
+      <div class="durationTime"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
