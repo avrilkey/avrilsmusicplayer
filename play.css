@@ -20,8 +20,8 @@ body {
 /*music player container*/
 .container {
   position: absolute;
-  height: 340pt;
-  width: 250pt;
+  height: 433px;
+  width: 333px;
   margin: auto;
   top: 0;
   left: 0;
@@ -179,3 +179,63 @@ body {
 #progress-bar:focus {
   outline: none;
 }
+
+/*Media Queries*/
+@media screen and (max-width: 576px){
+  .container {
+    height: 453px;
+    width: 323px;
+    
+  }
+  
+  #thumbnail{
+    top: 1.5%;
+  }
+  
+    .song-title{
+      font-size: 13px;
+      bottom: 14%;
+      left: 18%; /*positions the song title text to the left*/
+    }
+
+    #play-pause {
+      height: 43px;
+      width: 43px;
+      bottom: 12.5%;
+      left: 2%;
+    }
+  
+    #next-song,
+    #previous-song {
+    height: 28px;
+    width: 30px;  
+    }
+
+    #next-song{
+      bottom: 6%;
+    }
+    #previous-song{
+      top: 78%
+    }
+    .currentTime, 
+    .durationTime{
+      font-size: 12px;
+      bottom: -3%;
+    }
+    .currentTime{
+      left: 15%;
+    }
+    .durationTime{
+      right: 12%;
+  }
+    #progress-bar{
+    width: 157pt;
+    left: 14%;
+    bottom: 9%;
+  }
+  #progress-bar::-webkit-slider-thumb{
+    height: 11px;
+    width: 11px;
+  }
+}
+
