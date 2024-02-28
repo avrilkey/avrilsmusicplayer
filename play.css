@@ -13,7 +13,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  filter: blur(10px);
+  filter: blur(15px);
   z-index: -1;
 }
 
