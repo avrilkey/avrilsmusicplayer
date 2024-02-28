@@ -17,7 +17,9 @@ var songs = ["https://cdn.glitch.com/8d90fb7c-d365-4065-9b8c-17b1b25ec8fc%2Ftell
     ],
     songTitles = ['Groove Theory <br>Tell Me',
         'Paramore <br> Pressure',
-        'Kaytranada ft. VanJess  <br> Taste'
+        'Kaytranada ft. VanJess  <br> Taste', 
+        'Mobb Deep <br> Give Up The Goods',
+        'Patrice Rushen <br> Feels So Real'
     ]; // added breaks to song title to seperate artist name and song
 
 
